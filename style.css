@@ -1,0 +1,61 @@
+  body {
+      position: relative; 
+      background-image: url("http://res.cloudinary.com/dpanlycrj/image/upload/v1506883520/83BD6BB3-4E88-45ED-A7BF-F4C90FFFBFCF_vncoyg.png") 
+  }
+  #home {
+ 
+    padding-top:50px;
+    padding-bottom:50px;
+    /*height:500px;*/
+    color: #d9d9d9 !important; 
+    background-color: #030208 !important;
+}
+  #about-me {
+    padding-top:50px;
+    padding-bottom:50px;
+    color: #737373;
+    background-color: #000;
+}
+  #projects {
+    padding-top:50px;
+    padding-bottom:50px;
+    color: #d9d9d9; 
+    background-color: #030208;
+}
+#contact{
+    padding-top:20px;
+    padding-bottom:20px;
+    color: #737373;
+    background-color: #000;
+}
+
+.section{
+   opacity: 0.9;
+   width: 90% !important;
+    margin: auto !important;
+    font-family: "Lucida Console";
+}
+
+.navfonts{
+  font-family: "Lucida Console";
+  background-color: #000 !important;
+}
+.project-image{
+  width: 100%;
+  height:auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  
+}
+.project-image:hover{
+  opacity: 0.5;*/
+  filter: alpha(opacity=50);
+}
+
+.info p{
+  font-size: 30px;
+}
+
+.btn-hover:hover{
+ opacity: .5 !important;
+}
