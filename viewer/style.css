@@ -1,0 +1,15 @@
+    body{
+      background-color: Gray;
+      font-family: "Lucida Console", Monaco, monospace;
+    }
+    .entry{
+        min-height: 100px;
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .entry:hover{
+      cursor:pointer;
+      background-color: gray!important;
+      background-blend-mode: multiply!important;
+    }
