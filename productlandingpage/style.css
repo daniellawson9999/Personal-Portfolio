@@ -1,0 +1,156 @@
+
+body{
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+#layout{
+  width:100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50px auto 40px;
+  grid-template-areas: 
+    "header header header header header"
+    ". content content content ."
+    ". footer footer footer .";
+}
+header{
+  background-color: black;
+  grid-area: header;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+}
+#header-img{
+  margin-right: 10px;
+}
+h1{
+  font-size: 40px;
+}
+.logo{
+  color: rgb(118,185,0);
+  float: left;
+  position: relative;
+  top: 0px;
+  margin: 0px;
+}
+.nav-link{
+  float: right;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  top: 10px;
+  right: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+#content{
+    display:flex;
+  grid-area: content;
+  flex-direction: column;
+  align-items: center;
+}
+#info{
+  font-size: 20px;
+}
+#info p{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#info h2{
+  text-align:center;
+  text-decoration: underline;
+}
+#video{
+  display:block;
+  --margin: 50px;
+  margin-top: var(--margin,30px);
+  margin-bottom: var(--margin,30px);
+}
+#pricing{
+  display:flex;
+  flex-direction: row;
+}
+.box{
+  --padding: 40px;
+  background-color: rgb(118,185,0);
+  color:white;
+  margin: 5px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  padding-right: var(--padding,30px);
+  padding-left: var(--padding,30px);
+
+}
+
+.box button{
+  display:block;
+
+  margin: auto;
+  background-color: rgb(0,72,49);
+  border: 0px;
+  color: white;
+}
+
+footer{
+  grid-area: footer;
+  background-color: rgb(0,72,49);
+  align-self: start;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input{
+  display:block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+input[type=submit]{
+  font-size: 16px;
+  margin-bottom: 100px;
+  background-color: rgb(0,72,49);
+  border: 0px;
+  color: white;
+}
+#footer{
+  text-align: center;
+}
+
+@media(max-width: 850px){
+  #layout{
+    grid-template-areas: 
+    "header header header header header"
+    ". content content content ."
+    "footer footer footer footer footer";
+  }
+  #pricing{
+    flex-direction: column;
+  }
+  .box{
+    --padding: 100px;
+    margin-bottom: 15px;
+  }
+  #header-img{
+    transform: scale(.5);
+    margin-right: 0px;
+    top: 0px;
+  }
+  h1{
+    font-size: 24px;
+  }
+  .nav-link{
+    font-size: 9px;
+  }
+  iframe{
+    width: 100%;
+  }
+}

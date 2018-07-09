@@ -1,0 +1,18 @@
+
+body{
+  font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+.center{
+  min-height:200px;
+  width:500px;
+  background-color: white;
+  color: black;
+  margin:auto;
+  margin-top:200px;
+  margin-bottom:200px;
+}
+ .fa-twitter:before {
+   /*prevent ad-block from blocking the font awesome icon*/
+        content: "\f099"; 
+}

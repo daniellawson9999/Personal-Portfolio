@@ -1,0 +1,135 @@
+:root{
+  --background-color: #cdcdcd;
+}
+
+body{
+  background-color: var(--background-color, white);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+#layout{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 310px auto;
+  grid-template-areas: "nav main";
+}
+#navbar{
+  background-color: var(--background-color,white);
+  grid-area: nav;
+  position: fixed;
+}
+#navbar::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  border-right: 3px solid #CC7722;
+}
+
+nav header{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 3px;
+}
+.nav-link{
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid black;
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+}
+
+main{
+  grid-area: main;
+  background-color: background-color: var(--background-color,white);
+  height: stretch;
+  font-size: 20px;
+}
+.main-section{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+section header{
+  font-size: 26px;
+  font-weight: bold;
+}
+li{
+  margin-bottom: 10px;
+}
+li code{
+  background-color: hsl(41, 0%, 88%);
+  border-radius: 6%;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  color: #2e2d2d;
+  padding: 2px;
+}
+pre{
+  background-color: hsl(41, 0%, 88%);
+  border-radius: 1%;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  color: #2e2d2d;
+  padding: 3px;
+  overflow: scroll;
+  overflow-y: visible;
+  -webkit-overflow-scrolling:touch;
+  max-width: 55vw;
+}
+a{
+  color: #CC7722;
+}
+
+
+@media(max-width: 800px){
+  #layout{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px auto;
+    grid-template-areas: 
+      "nav"
+      "main";
+  }
+  #navbar{
+    border-right: 0px;
+    /*probably change padding in media query*/
+    width: 100%;
+    position: relative;
+  }
+  #navbar::before{
+  border-right: 0px solid #CC7722;
+}
+  #navbar header{
+    text-align: center;
+  }
+  .nav-link{
+    padding-right: 0px;
+    border-top: 1px solid black;
+    
+  }
+  #links{
+    height: 70%;
+    overflow: scroll;
+    overflow-x: visible;
+    -webkit-overflow-scrolling:touch;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #CC7722;
+  }
+  pre{
+  max-width: 90vw;
+  }
+  .main-section{
+    margin-left: 0px;
+  }
+}

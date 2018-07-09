@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Daniel Lawson</title>
+  <meta name = "description" content = "Daniel Lawson's portfolio">
+  <meta name = "author" content = "Daniel Lawson">
+
+  <!-- style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div id = "layout">
+  <header id ="header">
+    <img src = "http://res.cloudinary.com/dpanlycrj/image/upload/c_scale,h_50/v1529036398/resizedcard_ahuanm.png" alt = "A graphics card illustration" id="header-img" class = "logo">
+    <h1 class = "logo">High Quality Cards</h1>
+    <nav id = "nav-bar">
+      <a href = "#content" class = "nav-link">Features</a>
+      <a href = "#video" class = "nav-link">Demo</a>
+      <a href = "#pricing" class = "nav-link">Pricing</a>
+    </nav>
+  </header>
+  <div id ="content">
+    <div id = "info">
+      <h2>Performance</h2>
+      <p><i class="fas fa-tv fa-2x"></i>&emsp;Our cards are capable of powering high quality graphics</p>
+      <h2>Application</h2>
+      <p><i class="fas fa-cubes fa-2x"></i>&emsp;Perfect for virtual reality applications and demanding workloads</p>
+      <h2>Durability</h2>
+      <p><i class="fas fa-shield-alt fa-2x"></i>&emsp;Long-lasting and optional insurance plans</i></p>
+    </div>
+    <iframe id = "video" width="560" height="315" src="https://www.youtube.com/embed/EIHz3x9j0VI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <h2>Cards:</h2>
+    <div id = "pricing">
+      <div class = "box">
+        <h3>GTX 1060</h3>
+        <p>RAM: 6gb</p>
+        <p>TDP: 120W</p>
+        <p>COST: $249</p>
+        <button>BUY</button>
+      </div>
+      <div class = "box">
+        <h3>GTX 1070</h3>
+        <p>RAM: 8gb</p>
+        <p>TDP: 150W</p>
+        <p>COST: $399</p>
+        <button>BUY</button>
+      </div>
+      <div class = "box">
+        <h3>GTX 1080</h3>
+        <p>RAM: 8gb</p>
+        <p>TDP: 180W</p>
+        <p>COST: $549</p>
+        <button>BUY</button>
+      </div>
+    </div>
+    <h2 style = "margin-top: 60px;">Custom Requests?</h2>
+    <form id = "form" action = "https://www.freecodecamp.com/email-submit" method = "post" target = "_blank"> 
+      <input type = "email" name = "email" id = "email" placeholder = "email" required pattern = ".+@.+" required = "true">
+      <input type = "submit" id = "submit" value = "Submit">
+    </form>
+  </div>
+  <footer>
+    <p id = "footer"><a>Contact</a>&emsp;<a>Terms</a>&emsp;<a>Top</a>&emsp;</p>
+  </footer>
+</div>

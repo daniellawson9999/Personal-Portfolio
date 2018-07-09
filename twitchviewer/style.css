@@ -1,0 +1,21 @@
+body{
+   font-family: "Lucida Console", Monaco, monospace;
+}
+
+.control{
+  width:350px;
+  position:relative;
+  left:20px;
+  padding-bottom:10px;
+}
+
+.card{
+  width: 600px;
+  margin-left:20px;
+}
+.card:hover{
+  cursor:pointer;
+  background-color: orange!important;
+  background-blend-mode: multiply!important;
+}
+

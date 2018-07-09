@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Daniel Lawson</title>
+  <meta name = "description" content = "Daniel Lawson's portfolio">
+  <meta name = "author" content = "Daniel Lawson">
+
+  <!-- style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<div id = "flex-top">
+  <h1 id = "title">One Piece Fan Survey</h1>
+  <img src = "https://vignette.wikia.nocookie.net/onepiece/images/7/75/One_Piece_Logo.png/revision/latest?cb=20161004023941">
+</div>
+<form id = "survey-form">
+  <p id = "description">If you're a one piece fan, we would like to learn more about what makes you enjoy the show!</p>
+ <div id = "display">
+   <label for = "name" id = "name-label" class = "col1">Name<sup>*</sup>:</label>
+ <input type = "text" name = "name" id = "name" placeholder = "Enter your name or username" class = "col2" required = "true">
+ <label for = "email" id = "email-label" class = "col1">Email<sup>*</sup>: </label>
+ <input type = "email" name = "email" id = "email" placeholder = "Enter your email" required pattern = ".+@.+" class = "col2" required = "true">
+ <label for = "number" id = "number-label" class = "col1">Age<sup>*</sup>:</label>
+ <input type = "number" name "age" id = "number" placeholder = "age" min = "1" max = "120" class = "col2" required = "true">
+ <label for = "dropdown" class = "col1">How much of a fan would you consider yourself? </label>
+ <select id = "dropdown" name= "level" class = "col2">
+  <option value = "dub-watcher">Dub Watcher</option>
+  <option value = "sub-watcher">Standard Sub Watcher</option>
+  <option value = "manga-reader">Manga Maniac</option>
+  <option value = "theorist">Thoughtful Theorist</option>
+  <option value = "super-fan">Super Fan</option>
+ </select>
+   <legend class = "col1">Would you recommend One Piece to a friend?</legend>
+   <ul class = "col2">
+     <li><input type = "radio" id = "choice1" name = "recommend" value = "no"> 
+       <label for = "choice1">Not likely</label></li>
+     <li><input type = "radio" id = "choice2" name = "recommend" value = "possibly"> 
+       <label for = "choice2">Possibly</label></li>
+     <li><input type = "radio" id = "choice3" name = "recommend" value = "yes"> 
+       <label for = "choice3">Definitely</label></li>
+   </ul>
+   <legend class = "col1">Your favorite elements of One Piece, (Check all that apply):</legend>
+   <ul class = "col2">
+     <li><input type = "checkbox" id = "characters" name = "favorites" value = "characters">
+       <label for = "characters">The Characters</label></li>
+
+     <li><input type = "checkbox" id = "world" name = "favorites" value = "world">
+       <label for = "world">The World</label></li>
+
+     <li><input type = "checkbox" id = "combat" name = "favorites" value = "combat">
+       <label for = "combat">The Fights</label><li>
+
+     <li><input type = "checkbox" id = "music" name = "favorites" value = "music">
+       <label for = "music">The Music (anime)</label></li>
+
+     <li><input type = "checkbox" id = "art" name = "favorites" value = "art">
+       <label for = "art">The Art Style</label></li>
+   </ul>
+   <legend class = "col1">Other comments:</legend>
+   <textarea cols = "20" placeholder ="additional comments..." class = "col2"></textarea>     
+ </div>
+  <button type = "submit" id ="submit">Submit</button>
+</form>

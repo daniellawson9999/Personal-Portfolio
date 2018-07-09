@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Daniel Lawson</title>
+  <meta name = "description" content = "Daniel Lawson's portfolio">
+  <meta name = "author" content = "Daniel Lawson">
+
+   <!-- style -->
+ <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" type = "text/javascript"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>  
+  <script src = "https://rawgit.com/darkskyapp/skycons/master/skycons.js" type="text/javascript"></script>
+  <script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCw_R6Kun5sQm9b1AbQ2yrQRDuO_WKqxGo&libraries=places" type = "text/javascript"></script>
+</head>
+
+
+
+
+<body>
+  <div id = "main-panel">
+  <div class = "row">
+    <div class = "col-md-12">
+      <div id = "input">
+          <div class = "row">
+            <div class = "col-md-2">
+              <h1 style = "font-size:24px;margin-top:5px;">Location:</h1>
+            </div>
+            <div class = "col-md-8">
+              <input type="text" class="w3-input" id = "bar" value = "" placeholder = "enter a place, address, etc">
+            </div>
+            <div class  = "col-md-2">
+             <button class="w3-button w3-white" id = "add">Add</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class = "col-md-4">
+      <div id = "location-list" class = "w3-round-large">
+        <div class ="row">
+         <div class = "col-md-8">
+            <h1 class = "text-center">Locations</h1>
+          </div>
+          <div class ="col-md-4">
+            <button class ="w3-button w3-indigo" id = "clear" style = "margin-top:10px;">clear all</button>
+          </div>
+        </div>
+        <div id = "locations"></div>
+      </div>
+    </div>
+    <div class = "col-md-8">
+      <div id  = "weather-view" class = "w3-round-large">
+        <h1 class = "text-center" style= "padding-top:20px;" id = "weather-name">Weather</h1>
+         <canvas id="weather-icon"  width="128" height="128" style = "margin-left:40%;margin-bottom:20px;"></canvas>
+        <div class = "row">
+         <div class = "col-md-6">
+          <div class = "half w3-round-large" style = "font-size:24px;">
+          <p  class = "text-center" id = "summary" >Summary-</p>
+          <p class = "text-center" id = "temperature">Temperature-</p>
+          <p class = "unit text-center" id = "unit">Fahrenheit<p>
+           </div>
+          </div>
+         <div class = "col-md-6">
+           <div class = "half w3-round-large" style = "font-size:24px;">
+             <p class = "text-center" id = "humidity">Humidity-</p>
+             <p class ="text-center" id = "pressure">Pressure-</p>
+             <p class ="text-center" id ="uv-index">UV Index-</p>
+             <p class ="text-center" id= "cloud-cover">Cloud Cover-</p>
+             
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <p class = "text-center">Made by <a href = "https://codepen.io/Daniel_Lawson9999/full/dVOeBr/" target= "_blank" style = "color:DodgerBlue">Daniel Lawson</a>, data <a href= "https://darksky.net/poweredby/" target ="_blank" style = "color:DodgerBlue">Powered by Dark Sky</a></p>
+
+  <script src = "script.js" type = "text/javascript"></script>
+</body>

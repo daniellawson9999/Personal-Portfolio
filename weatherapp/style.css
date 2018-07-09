@@ -1,0 +1,69 @@
+body{
+  color: black;
+  
+}
+
+#main-panel{
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 1200px;
+  min-height: 800px;
+  background-color: LightSkyBlue;
+  margin-bottom: 50px;
+ 
+}
+
+#location-list{
+  background-color: DimGrey;
+  width: auto;
+  height:auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+#weather-view{
+  background-color: DarkGray;
+  width: auto;
+  height: 700px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.half{
+  background-color: DodgerBlue;
+  width: auto;
+  height:auto;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+
+#input{
+  background-color: DodgerBlue;
+  width: 100%;
+  padding: 10px;
+  
+}
+
+.location{
+  background-color: LightBlue;
+  height: 60px;
+  width: auto;
+  margin: 10px;
+  cursor:pointer;
+  
+}
+.location:hover{
+  background-color:gray;
+  background-blend-mode: multiply;
+}
+
+.unit{
+  color:white;
+}
+.unit:hover{
+  color:blue;
+  cursor:pointer;
+}
